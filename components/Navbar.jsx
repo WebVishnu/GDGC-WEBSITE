@@ -34,7 +34,6 @@ const Navbar = () => {
                   src={gdsclogoDark}
                   alt="logo"
                   width={500}
-                  prefetch={true}
                   className="left-0 p-1"
                 />
               </div>

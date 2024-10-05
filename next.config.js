@@ -5,6 +5,26 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: '*',
+        port: '',       
+      },
+      {
+        protocol: 'https',
+        hostname: 'media.licdn.com',
+        port: '',       
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',       
+      },
+      {
+        protocol: 'https',
+        hostname: 'live.staticflickr.com',
+        port: '',       
+      },
+      {
+        protocol: 'https',
         hostname: 'res.cloudinary.com',
         port: '',       
       },

@@ -164,7 +164,9 @@ const TeamSection = () => {
                 return (
                   <div key={member.id}>
                     <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                      <img
+                      <Image
+                        height={500}
+                        width={500}
                         className="object-cover w-full sm:h-80"
                         src={member.img}
                         alt={member.name}

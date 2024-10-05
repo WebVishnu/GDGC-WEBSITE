@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { SocialIcon } from "react-social-icons";
 import { ContributorData } from "@/Common/contributorData";
+import Image from "next/image";
 
 function Contributors() {
 
@@ -40,10 +41,12 @@ const [LoadMoreValue, setLoadMoreValue] = useState(8);
                   return (
                     <div key={member.id}>
                       <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
-                        <img
+                        <Image
                           className="object-cover w-full sm:h-80"
                           src={member.img}
                           alt={member.name}
+                          height={500}
+                          width={500}
                         />
 
                         <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
